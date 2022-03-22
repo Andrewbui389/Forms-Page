@@ -1,0 +1,91 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: stretch;
+    overflow: hidden;
+    margin: 0;
+    font-size: calc(5px + 1vw);
+    font-family: 'Lato', sans-serif;}
+
+input:invalid{
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
+
+.leftside{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    block-size: 3rem;
+}
+
+.rightside{
+    width: 60vw;
+    height: 100%;
+    background-color: rgb(43, 41, 41);
+
+}
+
+.title{
+    width: 100vw;
+    background-color: rgb(96,96,96,.3);
+    display: flex;
+    justify-content: center
+}
+
+
+
+
+.topside{
+    height: 50vh;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bottomside{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.reservForm{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "email name password"
+        "phonenumber address .";
+    gap: 50px;
+    overflow:hidden;
+    justify-items: flex-end;
+    color: rgb(182, 182, 159);
+}
+
+
+
+.emailcontainer:hover,
+.namecontainer:hover{
+    text-decoration: underline;
+}
+
